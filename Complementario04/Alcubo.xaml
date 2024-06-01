@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Complementario04.Alcubo"
+             Title="Alcubo">
+    <StackLayout Padding="20">
+        <Label Text="Ingrese un número entero positivo:" FontSize="Large" />
+
+        <!--Agregamos un campo de entrada para el número con un placeholder del numero y
+        un keyboard numeric este aparecera en la pantalla con un teclado de numeros-->
+        <Entry x:Name="numeroEntry" Placeholder="Número" Keyboard="Numeric" />
+
+        <!-- Agregamos el botón para calcular haciendo un evento el xaml.cs -->
+        <Button Text="Calcular" Clicked="Button_Clicked" />
+
+        <!-- Ponemos una etiqueta para mostrar los resultados en la pantalla-->
+        <Label x:Name="resultadoLabel" FontSize="Large" />
+
+        <!--Agregamis una img en nuestra app para que se vea muy visto-->
+        <Image Source="C:\Users\Alexis\Documents\Practica 09\Complementario04\Complementario04\Cubo.jpg" WidthRequest="500" HeightRequest="300" Aspect="AspectFit" />
+
+    </StackLayout>
+</ContentPage>
